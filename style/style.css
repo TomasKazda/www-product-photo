@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+nav{
+    background-color: #d9d9d9;
+    box-shadow: 0 0 7px -2px;
+}
+
+nav ul{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #242424;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px 30px;
+    color: #242424;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: 'Bree Serif', serif;
+    
+}
+
+nav ul li:hover{
+    background-color: #b5b5b5;
+}
+
+.viewer{
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 0 30px;
+    margin-top: 10px;
+}
+
+h1{
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    padding: 0 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+.popis > h1{
+    text-align: center;
+    font-size: 35px;
+    padding: 0 10px;
+    font-family: 'Bree Serif', serif;
+    
+}
+
+.popis p{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.titulek{
+    margin-top: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.titulek span{
+    font-size: 14px;
+}
+
+/*DEMO*/
+.wrapper > h1{
+    margin-top: 1em;
+    font-size: 25px;
+    margin-bottom: 1em;
+}
+
+.banner{
+    text-align: center;
+    background-color: #fef24e;
+    padding: 1.5em 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.banner img{
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px -10px;
+}
+
+.card{
+    padding: 10px 10px;
+}
+
+.card:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+section{
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+section > p {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+section p > a{
+    color: blue;
+    text-decoration: underline;
+}
+
+.videoviewer{
+    text-align: center;
+}
+
+.videoviewer > video {
+    width: 300px;
+    height: 100%;
+}
+
+.fotografie {
+    display: none
+}
+
+.fotografie img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+.carousel {
+    max-width: 550px;
+    position: relative;
+    margin: auto;
+}
+
+
+.arrow-right,
+.arrow-left {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+.arrow-left {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*VIDEO*/
+.iframe-container{
+    text-align: center;   
+}
+
+
+iframe{
+    width: 230px;
+    height: 150px;
+}
+
+
+.videonavod{
+    max-width: 100px;
+}
+
+
+@media screen and (max-width:758px) and (min-width:380px){
+    .viewer{
+        margin-top: 10px;
+    }
+
+    .popis > h1{
+        margin-top: 0.3em;
+        font-size: 40px; 
+    }
+
+    .titulek{
+        margin-top: 4em;
+    }
+
+    .card{
+        margin: 0.3em 1em;
+    }
+
+    .videoviewer > video {
+        width: 300px;
+    }
+
+    iframe{
+        width: 370px;
+        height: 205px;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:759px){
+    nav ul li{
+        padding: 20px 50px;
+    }
+    
+    .viewer{
+        padding: 0;
+    }
+
+    .popis > h1{
+        margin-top: 0.5em;
+        font-size: 45px;
+        letter-spacing: 1px;
+    }
+
+    .titulek{
+        margin-top: 7em;
+    }
+
+    .card{
+        margin: 0.5em 2em;
+    }
+
+    .videoviewer > video {
+        width: 400px;
+    }
+
+    iframe{
+        width: 576px;
+        height: 324px;
+    }
+}
+
+@media screen and (min-width:1025px){
+    nav ul li{
+        padding: 20px 70px;
+    }
+    
+    .viewer{
+        padding: 0;
+    }
+
+    .popis > h1{
+        margin-top: 0.5em;
+        font-size: 50px;
+        letter-spacing: 1px;
+    }
+
+    .titulek{
+        margin-top: 7em;
+    }
+
+    .popis p{
+        margin-top: 0.5em;
+    }
+
+    body{
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 69%, rgba(236,236,236,1) 100%);
+    }
+
+    .card{
+        margin: 0.5em 3em;
+    }
+
+    .banner img{
+        width: 250px;
+    }
+
+    .videoviewer > video {
+        width: 500px;
+    }
+
+    iframe{
+        width: 1000px;
+        height: 563px;
+    }
+}
